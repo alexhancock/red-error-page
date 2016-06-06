@@ -1,6 +1,6 @@
 {
   "name": "red-error-page",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Express error handling middleware which renders a red page (using redbox-react) with an easy to read error format.",
   "main": "index.js",
   "author": "Alex J Hancock",
