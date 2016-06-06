@@ -10,9 +10,9 @@
     "url": "https://github.com/alexhancock/red-error-page.git"
   },
   "dependencies": {
-    "accepts": "1.3.3",
-    "react": "15.0.2",
-    "react-dom": "15.0.2",
-    "redbox-react": "1.2.4"
+    "accepts": "^1.3.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "redbox-react": "^1.2.6"
   }
 }
