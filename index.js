@@ -1,4 +1,4 @@
-var RedboxReact = require("redbox-react");
+var RedBoxError = require("redbox-react").RedBoxError;
 var React = require("react");
 var ReactDOMServer = require('react-dom/server');
 var accepts = require("accepts");
@@ -15,13 +15,15 @@ module.exports = function(err, req, res, next){
   }
 
   // Send red page markup
-  var element = React.createElement(RedboxReact, {
+  var element = React.createElement(RedBoxError, {
     error: err,
     style: {
       overflowY: "scroll"
     }
   });
+
   var html = ReactDOMServer.renderToStaticMarkup(element);
+
   res.end(html);
 
   // Forward the error
